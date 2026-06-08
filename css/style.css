@@ -562,4 +562,13 @@ footer {
   .features-grid { grid-template-columns: 1fr; }
   .schedule-filters { gap: 6px; }
   .sched-btn { font-size: 13px; padding: 8px 14px; }
+  .sched-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 16px 20px;
+  }
+  .sched-time { font-size: 20px; min-width: unset; }
+  .sched-name { padding: 0; font-size: 14px; }
+  .sched-tag { font-size: 11px; }
 }

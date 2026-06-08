@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="APEX FITNESS — современный фитнес-клуб. Силовые, функциональные и персональные тренировки. Запись онлайн.">
+<title>APEX FITNESS — Фитнес-клуб нового формата</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- TIMER BAR -->
+<div class="timer-bar">
+  <span class="timer-label">🎯 Пробная тренировка бесплатно — акция заканчивается через</span>
+  <span class="timer-count" id="countdown">загрузка...</span>
+  <a href="#booking" class="timer-cta">Записаться</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <img src="images/logo.jpg" alt="Apex Fitness">
+    <div class="nav-brand">APEX <span>FITNESS</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#programs">Программы</a></li>
+    <li><a href="#trainers">Тренеры</a></li>
+    <li><a href="#schedule">Расписание</a></li>
+    <li><a href="#plans">Абонементы</a></li>
+    <li><a href="#booking">Контакты</a></li>
+  </ul>
+  <a href="#booking" class="nav-cta">Записаться</a>
+  <div class="burger" id="burger" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="nav-mobile" id="navMobile">
+  <a href="#programs">Программы</a>
+  <a href="#trainers">Тренеры</a>
+  <a href="#schedule">Расписание</a>
+  <a href="#plans">Абонементы</a>
+  <a href="#booking">Контакты</a>
+  <a href="#booking" class="nav-cta">Записаться</a>
+</div>
+
+<!-- HERO -->
+<section id="top">
+  <div class="hero">
+    <div class="reveal-l">
+      <div class="hero-tag">Фитнес-клуб нового формата</div>
+      <h1 class="hero-title">Твоя следующая<br><span>вершина</span> — здесь</h1>
+      <p class="hero-sub">Силовые, функциональные и персональные тренировки в пространстве, созданном для реального прогресса.</p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn-primary">Записаться на пробную</a>
+        <a href="#programs" class="btn-ghost">Смотреть программы</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num" data-target="900" data-suffix=" м²">0 м²</div>
+          <div class="stat-label">пространства</div>
+        </div>
+        <div>
+          <div class="stat-num" data-target="18" data-suffix="">0</div>
+          <div class="stat-label">профессиональных тренеров</div>
+        </div>
+        <div>
+          <div class="stat-num" data-target="7" data-suffix="">0</div>
+          <div class="stat-label">тренировочных зон</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal-r">
+      <div class="hero-img-wrap">
+        <img class="hero-img" src="images/hero.jpg" alt="Apex Fitness">
+        <div class="hero-badge">
+          <div class="hero-badge-icon">⚡</div>
+          <div class="hero-badge-text">
+            <div class="b-val">+2 400</div>
+            <div class="b-sub">активных участников</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs" class="programs">
+  <div class="section-wrap">
+    <div class="section-tag reveal">Направления</div>
+    <h2 class="section-title reveal">Три пути к результату</h2>
+    <p class="section-sub reveal">Выбери формат — или совмести все три для максимального прогресса.</p>
+    <div class="programs-grid">
+      <div class="prog-card reveal">
+        <img class="prog-img" src="images/strength.jpg" alt="Силовые тренировки">
+        <div class="prog-overlay"></div>
+        <div class="prog-content">
+          <div class="prog-num">01 — STRENGTH</div>
+          <div class="prog-name">Силовые</div>
+          <p class="prog-desc">Современное оборудование и профессиональные программы для роста силы и мышечной массы.</p>
+        </div>
+      </div>
+      <div class="prog-card reveal">
+        <img class="prog-img" src="images/functional.jpg" alt="Функциональный тренинг">
+        <div class="prog-overlay"></div>
+        <div class="prog-content">
+          <div class="prog-num">02 — FUNCTIONAL</div>
+          <div class="prog-name">Функциональные</div>
+          <p class="prog-desc">Развитие выносливости, координации и мобильности через высокоинтенсивные тренировки.</p>
+        </div>
+      </div>
+      <div class="prog-card reveal">
+        <img class="prog-img" src="images/personal.jpg" alt="Персональный тренинг">
+        <div class="prog-overlay"></div>
+        <div class="prog-content">
+          <div class="prog-num">03 — PERSONAL</div>
+          <div class="prog-name">Персональные</div>
+          <p class="prog-desc">Индивидуальная программа, постоянный контроль и поддержка личного тренера.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="features">
+  <div class="section-wrap">
+    <div class="section-tag reveal">Почему Apex</div>
+    <h2 class="section-title reveal">Всё для реального прогресса</h2>
+    <p class="section-sub reveal">Мы создали среду, в которой нет места оправданиям — только результат.</p>
+    <div class="features-grid">
+      <div class="feat-card reveal">
+        <div class="feat-icon">📋</div>
+        <div class="feat-name">Персональный план</div>
+        <p class="feat-desc">Программа тренировок и питания под ваши цели — с первого дня.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">🏆</div>
+        <div class="feat-name">Профессиональные тренеры</div>
+        <p class="feat-desc">18 сертифицированных специалистов с опытом от 5 лет.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">⚙️</div>
+        <div class="feat-name">Современное оборудование</div>
+        <p class="feat-desc">Техника премиальных брендов, регулярное обновление парка.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">📈</div>
+        <div class="feat-name">Контроль прогресса</div>
+        <p class="feat-desc">Регулярные замеры, тестирование и корректировка программы.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GROUP PHOTO -->
+<div style="overflow:hidden;max-height:420px;position:relative;">
+  <img src="images/group.jpg" alt="Групповая тренировка" style="width:100%;object-fit:cover;object-position:center 30%;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(245,246,242,.9) 0%,transparent 30%,transparent 70%,rgba(245,246,242,.9) 100%);"></div>
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+    <div style="font-family:'Unbounded',sans-serif;font-size:42px;font-weight:700;color:#18201D;line-height:1.1;">Тренируйся вместе.<br><span style="color:#3157F6;">Расти быстрее.</span></div>
+  </div>
+</div>
+
+<!-- TRAINERS -->
+<section id="trainers" class="trainers">
+  <div class="section-wrap">
+    <div class="section-tag reveal">Команда</div>
+    <h2 class="section-title reveal">Наши тренеры</h2>
+    <p class="section-sub reveal">Каждый — специалист с реальным опытом и сертификацией.</p>
+    <div class="trainers-grid">
+      <div class="trainer-card reveal">
+        <img class="trainer-img" src="images/trainer1.jpg" alt="Алексей Морозов">
+        <div class="trainer-info">
+          <div class="trainer-name">Алексей Морозов</div>
+          <div class="trainer-spec">Силовой тренинг · Пауэрлифтинг</div>
+          <div class="trainer-exp">Опыт 8 лет · КМС по тяжёлой атлетике</div>
+        </div>
+      </div>
+      <div class="trainer-card reveal">
+        <img class="trainer-img" src="images/trainer2.jpg" alt="Дмитрий Захаров">
+        <div class="trainer-info">
+          <div class="trainer-name">Дмитрий Захаров</div>
+          <div class="trainer-spec">Функциональный тренинг · Кроссфит</div>
+          <div class="trainer-exp">Опыт 6 лет · Сертификат CrossFit Level 2</div>
+        </div>
+      </div>
+      <div class="trainer-card reveal">
+        <img class="trainer-img" src="images/trainer3.jpg" alt="Анна Соколова">
+        <div class="trainer-info">
+          <div class="trainer-name">Анна Соколова</div>
+          <div class="trainer-spec">Функциональный тренинг · Мобильность</div>
+          <div class="trainer-exp">Опыт 5 лет · Диплом спортивного нутрициолога</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule" class="schedule">
+  <div class="section-wrap">
+    <div class="section-tag reveal">Расписание</div>
+    <h2 class="section-title reveal">Выбери своё время</h2>
+    <p class="section-sub reveal">Фильтруй по дням недели и находи удобные тренировки.</p>
+    <div class="schedule-filters">
+      <button class="sched-btn active" data-day="all">Все дни</button>
+      <button class="sched-btn" data-day="mon">Понедельник</button>
+      <button class="sched-btn" data-day="tue">Вторник</button>
+      <button class="sched-btn" data-day="wed">Среда</button>
+      <button class="sched-btn" data-day="thu">Четверг</button>
+      <button class="sched-btn" data-day="fri">Пятница</button>
+      <button class="sched-btn" data-day="sat">Суббота</button>
+      <button class="sched-btn" data-day="sun">Воскресенье</button>
+    </div>
+    <div class="schedule-grid">
+      <div class="sched-item" data-day="mon"><div class="sched-time">09:00</div><div class="sched-name">Силовая тренировка</div><span class="sched-tag strength">Силовая</span></div>
+      <div class="sched-item" data-day="mon"><div class="sched-time">11:00</div><div class="sched-name">Функциональный тренинг</div><span class="sched-tag functional">Функциональная</span></div>
+      <div class="sched-item" data-day="mon"><div class="sched-time">18:00</div><div class="sched-name">Персональная тренировка</div><span class="sched-tag personal">Персональная</span></div>
+      <div class="sched-item" data-day="mon"><div class="sched-time">20:00</div><div class="sched-name">Силовая тренировка</div><span class="sched-tag strength">Силовая</span></div>
+      <div class="sched-item" data-day="tue"><div class="sched-time">10:00</div><div class="sched-name">Силовая тренировка</div><span class="sched-tag strength">Силовая</span></div>
+      <div class="sched-item" data-day="tue"><div class="sched-time">12:00</div><div class="sched-name">Функциональный тренинг</div><span class="sched-tag functional">Функциональная</span></div>
+      <div class="sched-item" data-day="tue"><div class="sched-time">19:00</div><div class="sched-name">Персональная тренировка</div><span class="sched-tag personal">Персональная</span></div>
+      <div class="sched-item" data-day="wed"><div class="sched-time">09:00</div><div class="sched-name">Силовая тренировка</div><span class="sched-tag strength">Силовая</span></div>
+      <div class="sched-item" data-day="wed"><div class="sched-time">11:00</div><div class="sched-name">Функциональный тренинг</div><span class="sched-tag functional">Функциональная</span></div>
+      <div class="sched-item" data-day="wed"><div class="sched-time">18:00</div><div class="sched-name">Персональная тренировка</div><span class="sched-tag personal">Персональная</span></div>
+      <div class="sched-item" data-day="wed"><div class="sched-time">20:00</div><div class="sched-name">Групповая тренировка</div><span class="sched-tag group">Групповая</span></div>
+      <div class="sched-item" data-day="thu"><div class="sched-time">10:00</div><div class="sched-name">Силовая тренировка</div><span class="sched-tag strength">Силовая</span></div>
+      <div class="sched-item" data-day="thu"><div class="sched-time">12:00</div><div class="sched-time"></div><div class="sched-name">Функциональный тренинг</div><span class="sched-tag functional">Функциональная</span></div>
+      <div class="sched-item" data-day="thu"><div class="sched-time">19:00</div><div class="sched-name">Персональная тренировка</div><span class="sched-tag personal">Персональная</span></div>
+      <div class="sched-item" data-day="fri"><div class="sched-time">09:00</div><div class="sched-name">Силовая тренировка</div><span class="sched-tag strength">Силовая</span></div>
+      <div class="sched-item" data-day="fri"><div class="sched-time">11:00</div><div class="sched-name">Функциональный тренинг</div><span class="sched-tag functional">Функциональная</span></div>
+      <div class="sched-item" data-day="fri"><div class="sched-time">17:00</div><div class="sched-name">Персональная тренировка</div><span class="sched-tag personal">Персональная</span></div>
+      <div class="sched-item" data-day="fri"><div class="sched-time">19:00</div><div class="sched-name">Групповая тренировка</div><span class="sched-tag group">Групповая</span></div>
+      <div class="sched-item" data-day="sat"><div class="sched-time">10:00</div><div class="sched-name">Групповая тренировка</div><span class="sched-tag group">Групповая</span></div>
+      <div class="sched-item" data-day="sat"><div class="sched-time">12:00</div><div class="sched-name">Функциональный тренинг</div><span class="sched-tag functional">Функциональная</span></div>
+      <div class="sched-item" data-day="sat"><div class="sched-time">15:00</div><div class="sched-name">Силовая тренировка</div><span class="sched-tag strength">Силовая</span></div>
+      <div class="sched-item" data-day="sun"><div class="sched-time">11:00</div><div class="sched-name">Групповая тренировка</div><span class="sched-tag group">Групповая</span></div>
+      <div class="sched-item" data-day="sun"><div class="sched-time">13:00</div><div class="sched-name">Функциональный тренинг</div><span class="sched-tag functional">Функциональная</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section id="plans" class="plans">
+  <div class="section-wrap">
+    <div class="section-tag reveal">Абонементы</div>
+    <h2 class="section-title reveal">Выбери свой формат</h2>
+    <p class="section-sub reveal">Первая тренировка — бесплатно для всех новых участников.</p>
+    <div class="plans-grid">
+      <div class="plan-card reveal">
+        <div class="plan-name">Start</div>
+        <div class="plan-price">3 500 ₽</div>
+        <div class="plan-period">в месяц</div>
+        <ul class="plan-features">
+          <li>3 тренировки в неделю</li>
+          <li>Доступ к тренажёрному залу</li>
+          <li>Групповые тренировки</li>
+          <li>Базовый план питания</li>
+          <li>Шкафчик в раздевалке</li>
+        </ul>
+        <a href="#booking" class="btn-ghost" style="text-align:center;display:block;">Выбрать</a>
+      </div>
+      <div class="plan-card popular reveal">
+        <div class="plan-badge">Популярный</div>
+        <div class="plan-name">Progress</div>
+        <div class="plan-price">5 500 ₽</div>
+        <div class="plan-period">в месяц</div>
+        <ul class="plan-features">
+          <li>Безлимитные тренировки</li>
+          <li>Все зоны и направления</li>
+          <li>Скидка 20% на персональные</li>
+          <li>Расширенный план питания</li>
+          <li>Контроль прогресса ежемесячно</li>
+        </ul>
+        <a href="#booking" class="btn-primary" style="text-align:center;display:block;">Выбрать</a>
+      </div>
+      <div class="plan-card reveal">
+        <div class="plan-name">Apex</div>
+        <div class="plan-price">9 000 ₽</div>
+        <div class="plan-period">в месяц</div>
+        <ul class="plan-features">
+          <li>Безлимитные тренировки</li>
+          <li>4 персональные тренировки</li>
+          <li>Индивидуальный план питания</li>
+          <li>Приоритетная запись</li>
+          <li>Полный контроль прогресса</li>
+        </ul>
+        <a href="#booking" class="btn-ghost" style="text-align:center;display:block;">Выбрать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <div class="cta-lime">🎯 Бесплатная пробная тренировка</div>
+    <h2 class="cta-title">Начни с одной<br>тренировки</h2>
+    <p class="cta-sub">Познакомься с клубом, тренером и форматом занятий без покупки абонемента. Просто приди и попробуй.</p>
+    <a href="#booking" class="btn-lime">Записаться бесплатно</a>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="booking">
+  <div class="section-wrap">
+    <div class="booking-inner">
+      <div class="reveal-l booking-img">
+        <img src="images/hands.jpg" alt="Тренировка" style="border-radius:24px;height:100%;min-height:400px;object-fit:cover;">
+        <div style="margin-top:32px;display:flex;flex-direction:column;gap:16px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:44px;height:44px;background:var(--blue-dim);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📍</div>
+            <div>
+              <div style="font-size:12px;color:var(--text2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px;">Адрес</div>
+              <div style="font-weight:600;color:var(--text);">г. Москва, ул. Ленинградская, 42</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:44px;height:44px;background:var(--blue-dim);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">⏰</div>
+            <div>
+              <div style="font-size:12px;color:var(--text2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px;">Режим работы</div>
+              <div style="font-weight:600;color:var(--text);">Пн–Пт 7:00–23:00 · Сб–Вс 9:00–22:00</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:44px;height:44px;background:var(--blue-dim);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📞</div>
+            <div>
+              <div style="font-size:12px;color:var(--text2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px;">Телефон</div>
+              <div style="font-weight:600;color:var(--text);">+7 (495) 000-00-00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <div class="section-tag">Запись</div>
+        <h2 class="section-title">Запишитесь<br>на пробную</h2>
+        <p class="section-sub" style="margin-bottom:0;">Оставьте заявку — мы позвоним в течение 15 минут.</p>
+        <form class="booking-form" id="bookingForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="bName">Ваше имя *</label>
+              <input type="text" id="bName" placeholder="Александр" autocomplete="off">
+              <span class="err-msg" id="bNameErr"></span>
+            </div>
+            <div class="field">
+              <label for="bPhone">Телефон *</label>
+              <input type="tel" id="bPhone" placeholder="+7 (999) 000-00-00">
+              <span class="err-msg" id="bPhoneErr"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="bPlan">Интересующий абонемент *</label>
+            <select id="bPlan">
+              <option value="">Выберите вариант</option>
+              <option value="trial">Пробная тренировка (бесплатно)</option>
+              <option value="start">Start — 3 500 ₽/мес</option>
+              <option value="progress">Progress — 5 500 ₽/мес</option>
+              <option value="apex">Apex — 9 000 ₽/мес</option>
+            </select>
+            <span class="err-msg" id="bPlanErr"></span>
+          </div>
+          <div class="field">
+            <label for="bComment">Комментарий</label>
+            <textarea id="bComment" placeholder="Ваши цели, пожелания по времени тренировок..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;padding:18px;font-size:16px;">Отправить заявку</button>
+        </form>
+        <div class="form-success" id="formOk">
+          ✓ Заявка принята! Наш менеджер свяжется с вами в течение 15 минут.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">APEX <span>FITNESS</span></div>
+  <div class="footer-copy">© 2024 APEX FITNESS. Все права защищены.</div>
+  <div class="footer-note">Демонстрационный проект · Данные вымышлены</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
